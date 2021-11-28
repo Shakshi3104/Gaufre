@@ -28,6 +28,7 @@ struct WafersView: View {
             }
             .padding(20)
         }
+        .scaleEffect(0.7)
     }
 }
 

@@ -34,29 +34,23 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func buildMenu() {
         
         if let statusBarButton = statusItem.button {
-            statusBarButton.image = NSImage(systemSymbolName: "cpu",
+            statusBarButton.image = NSImage(systemSymbolName: "grid.circle",
                                             accessibilityDescription: "app icon")
             statusBarButton.image?.size = NSSize(width: 18.0, height: 18.0)
             statusBarButton.image?.isTemplate = true
             statusBarButton.target = self
         }
         
-        // Each core load view
-        let coreInfoMenuItem = NSMenuItem()
-        coreInfoMenuItem.title = "Core Load"
-        
+        // Each core load view        
         let waftersView = NSHostingView(rootView: WafersView(processor: processor))
-        waftersView.frame = NSRect(x: 0, y: 0, width: 300, height: 150)
+        waftersView.frame = NSRect(x: 0, y: 0, width: 200, height: 100)
         
-        let coreDetailMenuItem = NSMenuItem()
-        coreDetailMenuItem.view = waftersView
+        let coreInfoItem = NSMenuItem()
+        coreInfoItem.view = waftersView
         
-        let coreInfoSubmenu = NSMenu()
-        coreInfoSubmenu.addItem(coreDetailMenuItem)
-        
+        // main menu
         let mainMenu = NSMenu()
-        mainMenu.addItem(coreInfoMenuItem)
-        mainMenu.setSubmenu(coreInfoSubmenu, for: coreInfoMenuItem)
+        mainMenu.addItem(coreInfoItem)
         
         // separater
         mainMenu.addItem(NSMenuItem.separator())
