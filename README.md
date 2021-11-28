@@ -1,6 +1,6 @@
 # Gaufre
 
-Gaufre is the app for checking load of each core of CPU on your Mac menu bar.
+Gaufre🧇 is the app for checking load of each core of CPU on your Mac menu bar.
 
 The application name was decided to be [Gaufre](https://www.kobe-fugetsudo.co.jp/sweets/gaufres.html), derived from silicon "wafer".
 
