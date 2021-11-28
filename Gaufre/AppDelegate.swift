@@ -12,7 +12,7 @@ import SwiftUI
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     private let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-    @ObservedObject private var processor = ProcessorKitObserver()
+    private var processor = ProcessorKitObserver()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
