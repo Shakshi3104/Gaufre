@@ -11,6 +11,7 @@
 		CE42C03227535B8C00FC7ECF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42C03127535B8C00FC7ECF /* ViewController.swift */; };
 		CE42C03427535B8E00FC7ECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE42C03327535B8E00FC7ECF /* Assets.xcassets */; };
 		CE42C03727535B8E00FC7ECF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE42C03527535B8E00FC7ECF /* Main.storyboard */; };
+		CE42C04427535F9500FC7ECF /* WafersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42C04327535F9500FC7ECF /* WafersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,8 @@
 		CE42C03327535B8E00FC7ECF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE42C03627535B8E00FC7ECF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE42C03827535B8E00FC7ECF /* Gaufre.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Gaufre.entitlements; sourceTree = "<group>"; };
+		CE42C03E27535C5D00FC7ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CE42C04327535F9500FC7ECF /* WafersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WafersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +55,13 @@
 		CE42C02E27535B8C00FC7ECF /* Gaufre */ = {
 			isa = PBXGroup;
 			children = (
+				CE42C03E27535C5D00FC7ECF /* Info.plist */,
 				CE42C02F27535B8C00FC7ECF /* AppDelegate.swift */,
 				CE42C03127535B8C00FC7ECF /* ViewController.swift */,
 				CE42C03327535B8E00FC7ECF /* Assets.xcassets */,
 				CE42C03527535B8E00FC7ECF /* Main.storyboard */,
 				CE42C03827535B8E00FC7ECF /* Gaufre.entitlements */,
+				CE42C04327535F9500FC7ECF /* WafersView.swift */,
 			);
 			path = Gaufre;
 			sourceTree = "<group>";
@@ -132,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE42C03227535B8C00FC7ECF /* ViewController.swift in Sources */,
+				CE42C04427535F9500FC7ECF /* WafersView.swift in Sources */,
 				CE42C03027535B8C00FC7ECF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +283,7 @@
 				DEVELOPMENT_TEAM = WHBF4Z49B6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Gaufre/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -304,6 +311,7 @@
 				DEVELOPMENT_TEAM = WHBF4Z49B6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Gaufre/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
