@@ -12,14 +12,18 @@ import SwiftUI
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     private let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
+    @ObservedObject private var processor = ProcessorKitObserver()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
         buildMenu()
+        
+        processor.start()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
+        processor.cancel()
     }
 
     func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
@@ -41,8 +45,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let coreInfoMenuItem = NSMenuItem()
         coreInfoMenuItem.title = "Core Load"
         
-        let waftersView = NSHostingView(rootView: WafersView())
-        waftersView.frame = NSRect(x: 0, y: 0, width: 300, height: 250)
+        let waftersView = NSHostingView(rootView: WafersView(processor: processor))
+        waftersView.frame = NSRect(x: 0, y: 0, width: 300, height: 150)
         
         let coreDetailMenuItem = NSMenuItem()
         coreDetailMenuItem.view = waftersView

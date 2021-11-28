@@ -12,6 +12,10 @@
 		CE42C03427535B8E00FC7ECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE42C03327535B8E00FC7ECF /* Assets.xcassets */; };
 		CE42C03727535B8E00FC7ECF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE42C03527535B8E00FC7ECF /* Main.storyboard */; };
 		CE42C04427535F9500FC7ECF /* WafersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42C04327535F9500FC7ECF /* WafersView.swift */; };
+		CE42C04727536BAE00FC7ECF /* ProcessorKit in Frameworks */ = {isa = PBXBuildFile; productRef = CE42C04627536BAE00FC7ECF /* ProcessorKit */; };
+		CE42C04A27536BD800FC7ECF /* DeviceHardware in Frameworks */ = {isa = PBXBuildFile; productRef = CE42C04927536BD800FC7ECF /* DeviceHardware */; };
+		CE42C05127536C7100FC7ECF /* CoreTypeInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42C04F27536C7100FC7ECF /* CoreTypeInformation.swift */; };
+		CE42C05227536C7100FC7ECF /* ProcessorKitObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42C05027536C7100FC7ECF /* ProcessorKitObserver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,8 @@
 		CE42C03827535B8E00FC7ECF /* Gaufre.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Gaufre.entitlements; sourceTree = "<group>"; };
 		CE42C03E27535C5D00FC7ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CE42C04327535F9500FC7ECF /* WafersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WafersView.swift; sourceTree = "<group>"; };
+		CE42C04F27536C7100FC7ECF /* CoreTypeInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreTypeInformation.swift; sourceTree = "<group>"; };
+		CE42C05027536C7100FC7ECF /* ProcessorKitObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessorKitObserver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE42C04A27536BD800FC7ECF /* DeviceHardware in Frameworks */,
+				CE42C04727536BAE00FC7ECF /* ProcessorKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,15 +63,33 @@
 		CE42C02E27535B8C00FC7ECF /* Gaufre */ = {
 			isa = PBXGroup;
 			children = (
+				CE42C04C27536C4100FC7ECF /* View */,
+				CE42C04B27536C2600FC7ECF /* Model */,
 				CE42C03E27535C5D00FC7ECF /* Info.plist */,
 				CE42C02F27535B8C00FC7ECF /* AppDelegate.swift */,
 				CE42C03127535B8C00FC7ECF /* ViewController.swift */,
 				CE42C03327535B8E00FC7ECF /* Assets.xcassets */,
 				CE42C03527535B8E00FC7ECF /* Main.storyboard */,
 				CE42C03827535B8E00FC7ECF /* Gaufre.entitlements */,
-				CE42C04327535F9500FC7ECF /* WafersView.swift */,
 			);
 			path = Gaufre;
+			sourceTree = "<group>";
+		};
+		CE42C04B27536C2600FC7ECF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE42C04F27536C7100FC7ECF /* CoreTypeInformation.swift */,
+				CE42C05027536C7100FC7ECF /* ProcessorKitObserver.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE42C04C27536C4100FC7ECF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE42C04327535F9500FC7ECF /* WafersView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +108,10 @@
 			dependencies = (
 			);
 			name = Gaufre;
+			packageProductDependencies = (
+				CE42C04627536BAE00FC7ECF /* ProcessorKit */,
+				CE42C04927536BD800FC7ECF /* DeviceHardware */,
+			);
 			productName = Gaufre;
 			productReference = CE42C02C27535B8C00FC7ECF /* Gaufre.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +140,10 @@
 				Base,
 			);
 			mainGroup = CE42C02327535B8C00FC7ECF;
+			packageReferences = (
+				CE42C04527536BAE00FC7ECF /* XCRemoteSwiftPackageReference "ProcessorKit" */,
+				CE42C04827536BD800FC7ECF /* XCRemoteSwiftPackageReference "DeviceHardware" */,
+			);
 			productRefGroup = CE42C02D27535B8C00FC7ECF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +171,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE42C03227535B8C00FC7ECF /* ViewController.swift in Sources */,
+				CE42C05227536C7100FC7ECF /* ProcessorKitObserver.swift in Sources */,
+				CE42C05127536C7100FC7ECF /* CoreTypeInformation.swift in Sources */,
 				CE42C04427535F9500FC7ECF /* WafersView.swift in Sources */,
 				CE42C03027535B8C00FC7ECF /* AppDelegate.swift in Sources */,
 			);
@@ -349,6 +385,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE42C04527536BAE00FC7ECF /* XCRemoteSwiftPackageReference "ProcessorKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Shakshi3104/ProcessorKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.1;
+			};
+		};
+		CE42C04827536BD800FC7ECF /* XCRemoteSwiftPackageReference "DeviceHardware" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Shakshi3104/DeviceHardware";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE42C04627536BAE00FC7ECF /* ProcessorKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE42C04527536BAE00FC7ECF /* XCRemoteSwiftPackageReference "ProcessorKit" */;
+			productName = ProcessorKit;
+		};
+		CE42C04927536BD800FC7ECF /* DeviceHardware */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE42C04827536BD800FC7ECF /* XCRemoteSwiftPackageReference "DeviceHardware" */;
+			productName = DeviceHardware;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE42C02427535B8C00FC7ECF /* Project object */;
 }
