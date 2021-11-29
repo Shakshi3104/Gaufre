@@ -31,6 +31,7 @@
 		CE42C0552753725A00FC7ECF /* CoreTypeInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTypeInformation.swift; sourceTree = "<group>"; };
 		CE42C05727537E9400FC7ECF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CECC6F152754679B0001E388 /* gaufre.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gaufre.gif; sourceTree = "<group>"; };
+		CECC6F1727546A090001E388 /* gaufre-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gaufre-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 		CECC6F1327545F660001E388 /* materials */ = {
 			isa = PBXGroup;
 			children = (
+				CECC6F1727546A090001E388 /* gaufre-icon.png */,
 				CECC6F152754679B0001E388 /* gaufre.gif */,
 			);
 			path = materials;
