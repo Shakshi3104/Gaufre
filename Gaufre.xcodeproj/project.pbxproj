@@ -30,6 +30,7 @@
 		CE42C0532753723A00FC7ECF /* ProcessorKitObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessorKitObserver.swift; sourceTree = "<group>"; };
 		CE42C0552753725A00FC7ECF /* CoreTypeInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTypeInformation.swift; sourceTree = "<group>"; };
 		CE42C05727537E9400FC7ECF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CECC6F1427545F740001E388 /* gaufre.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gaufre.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +49,7 @@
 		CE42C02327535B8C00FC7ECF = {
 			isa = PBXGroup;
 			children = (
+				CECC6F1327545F660001E388 /* materials */,
 				CE42C05727537E9400FC7ECF /* README.md */,
 				CE42C02E27535B8C00FC7ECF /* Gaufre */,
 				CE42C02D27535B8C00FC7ECF /* Products */,
@@ -92,6 +94,14 @@
 				CE42C04327535F9500FC7ECF /* WafersView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CECC6F1327545F660001E388 /* materials */ = {
+			isa = PBXGroup;
+			children = (
+				CECC6F1427545F740001E388 /* gaufre.gif */,
+			);
+			path = materials;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
