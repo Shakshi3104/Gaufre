@@ -23,29 +23,29 @@ struct WafersView: View {
                     let coreUsage = processor.coreUsages[num]
                     let totalUsage = min(99.9, round((coreUsage.user + coreUsage.system) * 10.0) / 10.0)
                     
-                    BarView(value: totalUsage, color: color)
+                    BarView(value: totalUsage * 1.2, color: color)
                 }
             }
             .padding(20)
         }
-        .scaleEffect(0.7)
+        .scaleEffect(0.55)
     }
 }
 
 // MARK: - Bar
 struct BarView: View {
     var value: CGFloat
-    var maxValue: CGFloat = 100
+    var maxValue: CGFloat = 120
     var color = Color(.sRGB, red: 0.2, green: 0.5, blue: 0.8)
     
     var body: some View {
         VStack {
             ZStack(alignment: .bottom) {
                 RoundedRectangle(cornerRadius: 5)
-                    .frame(width: 20, height: maxValue)
+                    .frame(width: 30, height: maxValue)
                     .foregroundColor(.secondary.opacity(0.2))
                 RoundedRectangle(cornerRadius: 5)
-                    .frame(width: 20, height: value)
+                    .frame(width: 30, height: value)
                     .foregroundColor(color)
             }
         }
