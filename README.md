@@ -1,6 +1,6 @@
 # Gaufre
 
-<p aline="center">
+<p align="center">
     <img src="materials/gaufre-icon.png" height=64 />
 </p>
 
