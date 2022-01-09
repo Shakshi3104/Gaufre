@@ -7,12 +7,13 @@
 
 import Cocoa
 import SwiftUI
+import CoreWafer
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     private let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-    private var processor = ProcessorKitObserver()
+    private var processor = ProcessorObserver()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
@@ -42,7 +43,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
         // Each core load view        
-        let waftersView = NSHostingView(rootView: WafersView(processor: processor))
+        let waftersView = NSHostingView(rootView: WafersView(processor: processor) .scaleEffect(0.55))
         waftersView.frame = NSRect(x: 0, y: 0, width: 200, height: 100)
         
         let coreInfoItem = NSMenuItem()
