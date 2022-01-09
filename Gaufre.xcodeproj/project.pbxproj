@@ -8,27 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		CE42C03027535B8C00FC7ECF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42C02F27535B8C00FC7ECF /* AppDelegate.swift */; };
-		CE42C03227535B8C00FC7ECF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42C03127535B8C00FC7ECF /* ViewController.swift */; };
 		CE42C03427535B8E00FC7ECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE42C03327535B8E00FC7ECF /* Assets.xcassets */; };
 		CE42C03727535B8E00FC7ECF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE42C03527535B8E00FC7ECF /* Main.storyboard */; };
-		CE42C04427535F9500FC7ECF /* WafersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42C04327535F9500FC7ECF /* WafersView.swift */; };
-		CE42C04727536BAE00FC7ECF /* ProcessorKit in Frameworks */ = {isa = PBXBuildFile; productRef = CE42C04627536BAE00FC7ECF /* ProcessorKit */; };
-		CE42C04A27536BD800FC7ECF /* DeviceHardware in Frameworks */ = {isa = PBXBuildFile; productRef = CE42C04927536BD800FC7ECF /* DeviceHardware */; };
-		CE42C0542753723A00FC7ECF /* ProcessorKitObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42C0532753723A00FC7ECF /* ProcessorKitObserver.swift */; };
-		CE42C0562753725A00FC7ECF /* CoreTypeInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42C0552753725A00FC7ECF /* CoreTypeInformation.swift */; };
+		CEB1351F278A69F9002318CA /* CoreWafer in Frameworks */ = {isa = PBXBuildFile; productRef = CEB1351E278A69F9002318CA /* CoreWafer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE42C02C27535B8C00FC7ECF /* Gaufre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gaufre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE42C02F27535B8C00FC7ECF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE42C03127535B8C00FC7ECF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE42C03327535B8E00FC7ECF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE42C03627535B8E00FC7ECF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE42C03827535B8E00FC7ECF /* Gaufre.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Gaufre.entitlements; sourceTree = "<group>"; };
 		CE42C03E27535C5D00FC7ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		CE42C04327535F9500FC7ECF /* WafersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WafersView.swift; sourceTree = "<group>"; };
-		CE42C0532753723A00FC7ECF /* ProcessorKitObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessorKitObserver.swift; sourceTree = "<group>"; };
-		CE42C0552753725A00FC7ECF /* CoreTypeInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTypeInformation.swift; sourceTree = "<group>"; };
 		CE42C05727537E9400FC7ECF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CECC6F152754679B0001E388 /* gaufre.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gaufre.gif; sourceTree = "<group>"; };
 		CECC6F1727546A090001E388 /* gaufre-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gaufre-icon.png"; sourceTree = "<group>"; };
@@ -39,8 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE42C04A27536BD800FC7ECF /* DeviceHardware in Frameworks */,
-				CE42C04727536BAE00FC7ECF /* ProcessorKit in Frameworks */,
+				CEB1351F278A69F9002318CA /* CoreWafer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,33 +58,13 @@
 		CE42C02E27535B8C00FC7ECF /* Gaufre */ = {
 			isa = PBXGroup;
 			children = (
-				CE42C04C27536C4100FC7ECF /* View */,
-				CE42C04B27536C2600FC7ECF /* Model */,
 				CE42C03E27535C5D00FC7ECF /* Info.plist */,
 				CE42C02F27535B8C00FC7ECF /* AppDelegate.swift */,
-				CE42C03127535B8C00FC7ECF /* ViewController.swift */,
 				CE42C03327535B8E00FC7ECF /* Assets.xcassets */,
 				CE42C03527535B8E00FC7ECF /* Main.storyboard */,
 				CE42C03827535B8E00FC7ECF /* Gaufre.entitlements */,
 			);
 			path = Gaufre;
-			sourceTree = "<group>";
-		};
-		CE42C04B27536C2600FC7ECF /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				CE42C0532753723A00FC7ECF /* ProcessorKitObserver.swift */,
-				CE42C0552753725A00FC7ECF /* CoreTypeInformation.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		CE42C04C27536C4100FC7ECF /* View */ = {
-			isa = PBXGroup;
-			children = (
-				CE42C04327535F9500FC7ECF /* WafersView.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		CECC6F1327545F660001E388 /* materials */ = {
@@ -123,8 +93,7 @@
 			);
 			name = Gaufre;
 			packageProductDependencies = (
-				CE42C04627536BAE00FC7ECF /* ProcessorKit */,
-				CE42C04927536BD800FC7ECF /* DeviceHardware */,
+				CEB1351E278A69F9002318CA /* CoreWafer */,
 			);
 			productName = Gaufre;
 			productReference = CE42C02C27535B8C00FC7ECF /* Gaufre.app */;
@@ -138,7 +107,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1310;
-				LastUpgradeCheck = 1310;
+				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					CE42C02B27535B8C00FC7ECF = {
 						CreatedOnToolsVersion = 13.1;
@@ -155,8 +124,7 @@
 			);
 			mainGroup = CE42C02327535B8C00FC7ECF;
 			packageReferences = (
-				CE42C04527536BAE00FC7ECF /* XCRemoteSwiftPackageReference "ProcessorKit" */,
-				CE42C04827536BD800FC7ECF /* XCRemoteSwiftPackageReference "DeviceHardware" */,
+				CEB1351D278A69F9002318CA /* XCRemoteSwiftPackageReference "CoreWafer" */,
 			);
 			productRefGroup = CE42C02D27535B8C00FC7ECF /* Products */;
 			projectDirPath = "";
@@ -184,10 +152,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE42C03227535B8C00FC7ECF /* ViewController.swift in Sources */,
-				CE42C0562753725A00FC7ECF /* CoreTypeInformation.swift in Sources */,
-				CE42C0542753723A00FC7ECF /* ProcessorKitObserver.swift in Sources */,
-				CE42C04427535F9500FC7ECF /* WafersView.swift in Sources */,
 				CE42C03027535B8C00FC7ECF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +291,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Gaufre/Gaufre.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -355,6 +320,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Gaufre/Gaufre.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -401,34 +367,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CE42C04527536BAE00FC7ECF /* XCRemoteSwiftPackageReference "ProcessorKit" */ = {
+		CEB1351D278A69F9002318CA /* XCRemoteSwiftPackageReference "CoreWafer" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Shakshi3104/ProcessorKit";
+			repositoryURL = "https://github.com/Shakshi3104/CoreWafer";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.2.1;
-			};
-		};
-		CE42C04827536BD800FC7ECF /* XCRemoteSwiftPackageReference "DeviceHardware" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Shakshi3104/DeviceHardware";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 0.0.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CE42C04627536BAE00FC7ECF /* ProcessorKit */ = {
+		CEB1351E278A69F9002318CA /* CoreWafer */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CE42C04527536BAE00FC7ECF /* XCRemoteSwiftPackageReference "ProcessorKit" */;
-			productName = ProcessorKit;
-		};
-		CE42C04927536BD800FC7ECF /* DeviceHardware */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CE42C04827536BD800FC7ECF /* XCRemoteSwiftPackageReference "DeviceHardware" */;
-			productName = DeviceHardware;
+			package = CEB1351D278A69F9002318CA /* XCRemoteSwiftPackageReference "CoreWafer" */;
+			productName = CoreWafer;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

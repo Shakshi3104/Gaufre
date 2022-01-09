@@ -12,6 +12,7 @@ The application name was decided to be [Gaufre](https://www.kobe-fugetsudo.co.jp
     <img src="materials/gaufre.gif" width=256 />
 </p>
 
+
 ## Dependencies
 
 - Xcode 13.1+
@@ -19,5 +20,6 @@ The application name was decided to be [Gaufre](https://www.kobe-fugetsudo.co.jp
 
 ## Swift Package Dependencies
 
-- [ProcessorKit](https://github.com/Shakshi3104/ProcessorKit)
-- [DeviceHardware](https://github.com/Shakshi3104/DeviceHardware)
+- [CoreWafer](https://github.com/Shakshi3104/CoreWafer)
+    - [ProcessorKit](https://github.com/Shakshi3104/ProcessorKit)
+    - [DeviceHardware](https://github.com/Shakshi3104/DeviceHardware)
