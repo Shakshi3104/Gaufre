@@ -12,11 +12,31 @@ struct DebugWafersView: View {
     var coreCount: Int
     
     var body: some View {
-        HStack(alignment: .bottom) {
-            ForEach(0..<coreCount) { _ in
-                let coreUsage = Double.random(in: 0.0...99.9)
+        if coreCount < 30 {
+            HStack(alignment: .bottom) {
+                ForEach(0..<coreCount) { _ in
+                    let coreUsage = Double.random(in: 0.0...99.9)
+                    
+                    BarView(value: coreUsage)
+                }
+            }
+        } else {
+            VStack {
+                HStack(alignment: .bottom) {
+                    ForEach(0..<coreCount / 2) { _ in
+                        let coreUsage = Double.random(in: 0.0...99.9)
+                        
+                        BarView(value: coreUsage)
+                    }
+                }
                 
-                BarView(value: coreUsage)
+                HStack(alignment: .bottom) {
+                    ForEach(coreCount / 2 ..< coreCount) { _ in
+                        let coreUsage = Double.random(in: 0.0...99.9)
+                        
+                        BarView(value: coreUsage)
+                    }
+                }
             }
         }
     }
