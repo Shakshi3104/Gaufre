@@ -10,6 +10,7 @@
 		CE42C03027535B8C00FC7ECF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42C02F27535B8C00FC7ECF /* AppDelegate.swift */; };
 		CE42C03427535B8E00FC7ECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE42C03327535B8E00FC7ECF /* Assets.xcassets */; };
 		CE42C03727535B8E00FC7ECF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE42C03527535B8E00FC7ECF /* Main.storyboard */; };
+		CE99077C279D12B60085608B /* DebugWafersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99077B279D12B60085608B /* DebugWafersView.swift */; };
 		CEB1351F278A69F9002318CA /* CoreWafer in Frameworks */ = {isa = PBXBuildFile; productRef = CEB1351E278A69F9002318CA /* CoreWafer */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +22,7 @@
 		CE42C03827535B8E00FC7ECF /* Gaufre.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Gaufre.entitlements; sourceTree = "<group>"; };
 		CE42C03E27535C5D00FC7ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CE42C05727537E9400FC7ECF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CE99077B279D12B60085608B /* DebugWafersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugWafersView.swift; sourceTree = "<group>"; };
 		CECC6F152754679B0001E388 /* gaufre.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gaufre.gif; sourceTree = "<group>"; };
 		CECC6F1727546A090001E388 /* gaufre-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gaufre-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +65,7 @@
 				CE42C03327535B8E00FC7ECF /* Assets.xcassets */,
 				CE42C03527535B8E00FC7ECF /* Main.storyboard */,
 				CE42C03827535B8E00FC7ECF /* Gaufre.entitlements */,
+				CE99077B279D12B60085608B /* DebugWafersView.swift */,
 			);
 			path = Gaufre;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE99077C279D12B60085608B /* DebugWafersView.swift in Sources */,
 				CE42C03027535B8C00FC7ECF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
