@@ -20,6 +20,7 @@ struct DebugWafersView: View {
                     BarView(value: coreUsage)
                 }
             }
+            .padding(20)
         } else {
             VStack {
                 HStack(alignment: .bottom) {
@@ -38,6 +39,7 @@ struct DebugWafersView: View {
                     }
                 }
             }
+            .padding(20)
         }
     }
 }
