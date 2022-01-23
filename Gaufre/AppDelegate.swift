@@ -8,6 +8,7 @@
 import Cocoa
 import SwiftUI
 import CoreWafer
+import DeviceHardware
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -42,12 +43,25 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             statusBarButton.target = self
         }
         
-        // Each core load view        
-        let waftersView = NSHostingView(rootView: WafersView(processor: processor) .scaleEffect(0.55))
-        waftersView.frame = NSRect(x: 0, y: 0, width: 200, height: 100)
+        // Each core load view
+        let wafersView: NSView
+        let coreCount: Int
+        
+        #if DEBUG
+        coreCount = 56
+        wafersView = NSHostingView(rootView: DebugWafersView(coreCount: coreCount) .scaleEffect(0.55))
+        #else
+        coreCount = MacDeviceHardware.deviceHardware.processorCount
+        wafersView = NSHostingView(rootView: WafersView(processor: processor) .scaleEffect(0.55))
+        #endif
+        
+        let width = coreCount < 30 ? 20 * coreCount + 40 : 20 * coreCount / 2 + 40
+        let height = coreCount < 30 ? 100 : 160
+        
+        wafersView.frame = NSRect(x: 0, y: 0, width: width, height: height)
         
         let coreInfoItem = NSMenuItem()
-        coreInfoItem.view = waftersView
+        coreInfoItem.view = wafersView
         
         // main menu
         let mainMenu = NSMenu()
