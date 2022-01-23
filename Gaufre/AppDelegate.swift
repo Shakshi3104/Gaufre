@@ -43,11 +43,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
         // Each core load view        
-        let waftersView = NSHostingView(rootView: WafersView(processor: processor) .scaleEffect(0.55))
-        waftersView.frame = NSRect(x: 0, y: 0, width: 200, height: 100)
+        let wafersView = NSHostingView(rootView: WafersView(processor: processor) .scaleEffect(0.55))
+        wafersView.frame = NSRect(x: 0, y: 0, width: 200, height: 100)
         
         let coreInfoItem = NSMenuItem()
-        coreInfoItem.view = waftersView
+        coreInfoItem.view = wafersView
         
         // main menu
         let mainMenu = NSMenu()
