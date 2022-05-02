@@ -16,7 +16,7 @@ The application name was decided to be [Gaufre](https://www.kobe-fugetsudo.co.jp
 | :-------: | :-------: | :-------: |
 | ![](materials/gaufre-m1.png) | ![](materials/gaufre-m1-max.png) | ![](materials/gaufre-core-i5.png) |
 
-## Dependencies
+## Requirements
 
 - Xcode 13.1+
 - macOS 11+
