@@ -22,6 +22,9 @@
 		CE42C03827535B8E00FC7ECF /* Gaufre.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Gaufre.entitlements; sourceTree = "<group>"; };
 		CE42C03E27535C5D00FC7ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CE42C05727537E9400FC7ECF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CE69FEDB282009160023F560 /* gaufre-m1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gaufre-m1.png"; sourceTree = "<group>"; };
+		CE69FEDC282009160023F560 /* gaufre-m1-max.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gaufre-m1-max.png"; sourceTree = "<group>"; };
+		CE69FEDD282009160023F560 /* gaufre-core-i5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gaufre-core-i5.png"; sourceTree = "<group>"; };
 		CE99077B279D12B60085608B /* DebugWafersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugWafersView.swift; sourceTree = "<group>"; };
 		CECC6F152754679B0001E388 /* gaufre.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gaufre.gif; sourceTree = "<group>"; };
 		CECC6F1727546A090001E388 /* gaufre-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gaufre-icon.png"; sourceTree = "<group>"; };
@@ -73,6 +76,9 @@
 		CECC6F1327545F660001E388 /* materials */ = {
 			isa = PBXGroup;
 			children = (
+				CE69FEDD282009160023F560 /* gaufre-core-i5.png */,
+				CE69FEDC282009160023F560 /* gaufre-m1-max.png */,
+				CE69FEDB282009160023F560 /* gaufre-m1.png */,
 				CECC6F1727546A090001E388 /* gaufre-icon.png */,
 				CECC6F152754679B0001E388 /* gaufre.gif */,
 			);
