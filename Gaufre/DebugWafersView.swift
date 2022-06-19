@@ -14,7 +14,7 @@ struct DebugWafersView: View {
     var body: some View {
         if coreCount < 30 {
             HStack(alignment: .bottom) {
-                ForEach(0..<coreCount) { _ in
+                ForEach(0..<coreCount, id: \.self) { _ in
                     let coreUsage = Double.random(in: 0.0...99.9)
                     
                     BarView(value: coreUsage)
@@ -24,7 +24,7 @@ struct DebugWafersView: View {
         } else {
             VStack {
                 HStack(alignment: .bottom) {
-                    ForEach(0..<coreCount / 2) { _ in
+                    ForEach(0..<coreCount / 2, id: \.self) { _ in
                         let coreUsage = Double.random(in: 0.0...99.9)
                         
                         BarView(value: coreUsage)
@@ -32,7 +32,7 @@ struct DebugWafersView: View {
                 }
                 
                 HStack(alignment: .bottom) {
-                    ForEach(coreCount / 2 ..< coreCount) { _ in
+                    ForEach(coreCount / 2 ..< coreCount, id: \.self) { _ in
                         let coreUsage = Double.random(in: 0.0...99.9)
                         
                         BarView(value: coreUsage)
