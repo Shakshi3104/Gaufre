@@ -35,8 +35,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     // MARK: - Build status bar
     func buildMenu() {
         
+        // if Intel Mac, status bar icon is fill icon
+        let statusBarSymbolName = MacDeviceHardware.deviceHardware.processorName.contains("Apple") ? "grid.circle" : "grid.circle.fill"
+        
         if let statusBarButton = statusItem.button {
-            statusBarButton.image = NSImage(systemSymbolName: "grid.circle",
+            statusBarButton.image = NSImage(systemSymbolName: statusBarSymbolName,
                                             accessibilityDescription: "app icon")
             statusBarButton.image?.size = NSSize(width: 18.0, height: 18.0)
             statusBarButton.image?.isTemplate = true
