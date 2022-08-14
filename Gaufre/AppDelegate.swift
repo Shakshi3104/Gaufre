@@ -58,8 +58,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         wafersView = NSHostingView(rootView: WafersView(processor: processor) .scaleEffect(0.55))
         #endif
         
-        let width = coreCount < 30 ? 20 * coreCount + 40 : 20 * coreCount / 2 + 40
-        let height = coreCount < 30 ? 100 : 160
+        let width = coreCount < 30 ? 20 * coreCount + 45 : 20 * coreCount / 2 + 45
+        let height = coreCount < 30 ? 90 : 160
         
         wafersView.frame = NSRect(x: 0, y: 0, width: width, height: height)
         
@@ -69,6 +69,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // main menu
         let mainMenu = NSMenu()
         mainMenu.addItem(coreInfoItem)
+        
+        // Processor name
+        let processorName: String
+        #if DEBUG
+        processorName = "DEBUG"
+        #else
+        processorName = MacDeviceHardware.deviceHardware.processorName
+        #endif
+        mainMenu.addItem(withTitle: processorName, action: nil, keyEquivalent: "")
         
         // separater
         mainMenu.addItem(NSMenuItem.separator())
