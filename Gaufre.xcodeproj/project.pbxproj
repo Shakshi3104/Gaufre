@@ -15,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE236FA32A10E24100475A29 /* gaufre-m2-pro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gaufre-m2-pro.png"; sourceTree = "<group>"; };
 		CE42C02C27535B8C00FC7ECF /* Gaufre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gaufre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE42C02F27535B8C00FC7ECF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE42C03327535B8E00FC7ECF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +77,7 @@
 		CECC6F1327545F660001E388 /* materials */ = {
 			isa = PBXGroup;
 			children = (
+				CE236FA32A10E24100475A29 /* gaufre-m2-pro.png */,
 				CE69FEDD282009160023F560 /* gaufre-core-i5.png */,
 				CE69FEDC282009160023F560 /* gaufre-m1-max.png */,
 				CE69FEDB282009160023F560 /* gaufre-m1.png */,
