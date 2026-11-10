@@ -18,8 +18,8 @@ The application name was decided to be [Gaufre](https://www.kobe-fugetsudo.co.jp
 
 ## Requirements
 
-- Xcode 13.1+
-- macOS 11+
+- Xcode 16+
+- macOS 15+
 
 ## Swift Package Dependencies
 
