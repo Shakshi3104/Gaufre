@@ -49,7 +49,12 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "$TAG" Gaufre.app.zip \
-            --title "$TAG" \
-            --generate-notes \
-            --verify-tag
+          if gh release view "$TAG" > /dev/null 2>&1; then
+            # Release already exists (e.g. created manually): just attach the build
+            gh release upload "$TAG" Gaufre.app.zip --clobber
+          else
+            gh release create "$TAG" Gaufre.app.zip \
+              --title "$TAG" \
+              --generate-notes \
+              --verify-tag
+          fi
