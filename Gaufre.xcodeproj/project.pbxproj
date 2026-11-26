@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE42C03027535B8C00FC7ECF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42C02F27535B8C00FC7ECF /* AppDelegate.swift */; };
+		2D40940194FE8E67114CB703 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 0B2B3180F06211E997CB7CEA /* AppIcon.icon */; };
 		CE42C03427535B8E00FC7ECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE42C03327535B8E00FC7ECF /* Assets.xcassets */; };
 		CE42C03727535B8E00FC7ECF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE42C03527535B8E00FC7ECF /* Main.storyboard */; };
 		CE99077C279D12B60085608B /* DebugWafersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99077B279D12B60085608B /* DebugWafersView.swift */; };
@@ -19,6 +20,7 @@
 		CE236FA42A10E79F00475A29 /* gaufre-v3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "gaufre-v3.gif"; sourceTree = "<group>"; };
 		CE42C02C27535B8C00FC7ECF /* Gaufre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gaufre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE42C02F27535B8C00FC7ECF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0B2B3180F06211E997CB7CEA /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 		CE42C03327535B8E00FC7ECF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE42C03627535B8E00FC7ECF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE42C03827535B8E00FC7ECF /* Gaufre.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Gaufre.entitlements; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 			children = (
 				CE42C03E27535C5D00FC7ECF /* Info.plist */,
 				CE42C02F27535B8C00FC7ECF /* AppDelegate.swift */,
+				0B2B3180F06211E997CB7CEA /* AppIcon.icon */,
 				CE42C03327535B8E00FC7ECF /* Assets.xcassets */,
 				CE42C03527535B8E00FC7ECF /* Main.storyboard */,
 				CE42C03827535B8E00FC7ECF /* Gaufre.entitlements */,
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE42C03427535B8E00FC7ECF /* Assets.xcassets in Resources */,
+				2D40940194FE8E67114CB703 /* AppIcon.icon in Resources */,
 				CE42C03727535B8E00FC7ECF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
